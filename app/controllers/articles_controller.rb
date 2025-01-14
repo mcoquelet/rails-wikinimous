@@ -20,7 +20,7 @@ class ArticlesController < ApplicationController
   end
 
   def update
-    @article = Article.update!(article_params)
+    @article.update!(article_params)
     redirect_to article_path(@article)
   end
 
