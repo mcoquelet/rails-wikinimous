@@ -1,0 +1,11 @@
+<div class="d-flex align-items-center">
+  <h1 class="my-3 flex-grow-1"><%= @article.title %></h1>
+  <a href=<%= edit_article_path(@article) %>>
+    <i class="fa-solid fa-pen-to-square fa-xl m-2"></i>
+  </a>
+  <a data-turbo-method="delete" data-turbo-confirm="Are you sure?" href=<%= article_path(@article) %>>
+    <i class="fa-solid fa-trash fa-xl m-2"></i>
+  </a>
+</div>
+<hr>
+<p><%= @article.content %></p>
